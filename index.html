@@ -1,0 +1,99 @@
+<!-- Step 1: Create the Layout. -->
+<!-- Step 2: Flag key sections with specific id names. These will be replaced by JavaScript -->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset='UTF-8'>
+    <title>Giphy Finder</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|VT323" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Bootstrap Container will hold everything. -->
+    <div class="container">
+
+        <!-- Jumbotron holds the title section. -->
+        <div class='jumbotron mgnTop'>
+            <div class='container'>
+                <h1 class="text-center"><i class="far fa-images"></i> Giphy Image Finder</h1>
+                <hr>
+                <p class="text-center"><small><i class="far fa-image"></i>  add button below and click to search the giphy api</small></p>
+            </div>
+        </div>
+
+        <!-- Game counters held here. cards are being used to hold various sections. -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- First card: Holds the Word to Guess (blanks and guessed word). -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <br>
+                        <h3 class="card-title"><i class="fas fa-camera-retro"></i> <strong> Giphy Image Finder</strong></h3>
+                    </div>
+
+                    <div class="card-body ">
+
+                        <div class="container">
+                            <!-- Rendered Buttons will get Dumped Here  -->
+                            <div id="buttons-view" v></div>
+                            <br>
+                                
+                            <form id="image-form">
+                              <label for="image-input"><p><i class="far fa-file-image"></i> Add a search topic: </p></label>
+                              <input type="text" id="image-input">
+                              <br><br>                            
+                            <!-- Button triggers new image to be added -->
+                              <button class="btn btn-info btn-sm" id="add-image" type="submit"><i class="fas fa-search-plus"></i> ADD TOPIC</button>
+                            </form>
+                        </div>
+                </div>
+                <br>
+                <!-- Results -->
+                <div class="card card-default">
+                        <div class="card-header">
+                            <br>
+                            <h3 class="card-title"><strong><i class="fas fa-images"></i></i>  Results</strong></h3>
+                        </div>
+    
+                        <div class="card-body">
+                            <div id="container">
+                                <div id="results"></div>
+                                
+                                    <!-- images will Get Dumped Here -->
+                                    <div id="gifs-appear-here">
+                                
+                                                
+                                    </div>
+                            </div>
+                            
+                        </div>
+    
+                </div>
+                    
+            </div>
+<br><br>
+        </div>
+
+    </div>
+
+    <!-- Adds a link to the JavaScript file. Loaded at the bottom so it waits for the HTML content to display first. If you put this at the top it will crash, because the HTML IDs won"t exist yet.-->
+    <script src="assets/javascript/app.js"></script>
+
+
+</body>
+
+</html>

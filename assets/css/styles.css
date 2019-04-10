@@ -1,0 +1,36 @@
+
+    h1 {
+        font-family: 'Josefin Slab';
+        font-weight: bold;
+        font-size: 3em;
+    }
+    .title{
+        font-size: 22px;
+        font-weight: bold;
+     }
+    .btnSpace {
+        margin: 0px 15px 15px 0px;
+    }
+    .mgnBottom {
+        margin-bottom: 40px;
+    }
+    .mgnTop {
+        margin-top: 30px;
+    }
+    p {
+        font-family: 'Josefin Slab';
+
+    }
+    h3 {
+        font-family: 'Josefin Slab';
+
+    }
+    .btn {
+        font-family: 'VT323';
+
+    }
+    body {
+        background-color: cadetblue;
+    }
+     
+ 
