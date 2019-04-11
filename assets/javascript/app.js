@@ -102,7 +102,7 @@
 
 
 // Event listener for all button elements
-$("button").on("click", function() {
+$(".btnSpace").on("click", function() {
       // In this case, the "this" keyword refers to the button that was clicked
       var image = $(this).attr("data-image");
 
